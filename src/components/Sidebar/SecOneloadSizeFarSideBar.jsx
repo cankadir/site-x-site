@@ -24,12 +24,11 @@ function SecOneloadSizeFarSideBar() {
   } = useContext(MapContext);
   
 
-  const handleMapFilter = () => {
-
+  const handleMapFilter = (lot = lotValue, far = farValue) => {
     map.current.setFilter('pluto_recdev_no_soft', [
       "any",
-      ['<', 'availFAR_perc_12', farValue],
-      ['<', 'LotArea_12', lotValue]
+      ['<', 'availFAR_perc_12', far],
+      ['<', 'LotArea_12', lot]
     ]);
   };
 
@@ -153,8 +152,9 @@ function SecOneloadSizeFarSideBar() {
                   value={lotValue}
                   onChange={(e) => {
                     e.preventDefault();
-                    handleLotValue(parseInt(e.target.value));
-                    handleMapFilter();
+                    const lot = parseInt(e.target.value);
+                    handleLotValue(lot);
+                    handleMapFilter(lot);
                   }}
                 ></input>
                 <p className="minp">0</p>
@@ -172,8 +172,9 @@ function SecOneloadSizeFarSideBar() {
                   value={farValue}
                   onChange={(e) => {
                     e.preventDefault();
-                    handleFarValue(parseInt(e.target.value));
-                    handleMapFilter();
+                    const far = parseInt(e.target.value);
+                    handleFarValue(far);
+                    handleMapFilter(lotValue, far);
                   }}
                 ></input>
                 <p className="minp">0%</p>

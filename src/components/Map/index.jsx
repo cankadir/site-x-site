@@ -24,7 +24,7 @@ const Map = ({ mapContainerRef }) => {
     map.current.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right');
 
     return () => map.current.remove();
-  }, []);
+  }, [map, mapContainerRef]);
 
   return (
     <>

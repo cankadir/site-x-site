@@ -92,7 +92,6 @@ const PartOne = () => {
         hideBoxChart: removeBoxChart,
         // displayHexMaps: handleHexMaps,
         // hideHexMaps: removeHexMaps,
-        displayLegend: handleLegend,
         handleLegend: handleLegend,
         legendIndex: legendIndex,
         farValue: farValue,
@@ -107,7 +106,7 @@ const PartOne = () => {
         mapOnClick={handleMapChange}
         currentMap={currentMap}
       />
-      {showBoxchart && <Boxchart far_value={farValue} lot_value={lotValue} />}
+      {showBoxchart && <Boxchart />}
       {/* {showHexMaps && <Hexmap />} */}
       {showDotchart && <Dotchart />}
       {showLegend && <Legend />}

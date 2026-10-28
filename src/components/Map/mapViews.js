@@ -47,19 +47,21 @@ export const ceqrIntro = (map) => {
     }
     document.getElementById("popuptext_nyc").className = "nyc-hide";
 
-    document.getElementById("popuptext").innerHTML = '<p class="puma-label intro">' + feature.properties.nabes + '</p>' +
-    '<div class="row soft">' +
-      '<div class="column num">' + '<p class="num">' + feature.properties.NU_softsites_12 + '</p>' + '</div>' +
-      '<div class="column text">' + ' sites fit CEQR soft site criteria in 2012' + '</div>' +
-    '</div>' +
-    '<div class="row  dev_soft">' +
-      '<div class="column num">' + '<p class="num">' + feature.properties.NU_rec_dev_is_soft_site + '</p>' + '</div>' +
-      '<div class="column text">' + ' of those sites were developed between 2012 and 2022' + '</div>' +
-    '</div>' +
-    '<div class="row intro">' +
-      '<div class="column num">' + '<p class="num">' + feature.properties.NU_rec_dev_not_soft_site + '</p>' + '</div>' +
-      '<div class="column text">' +  ' lots that did not fit CEQR soft site criteria were also developed' + '</div>' +
-    '</div>';
+    document.getElementById("popuptext").innerHTML = [
+      `<p class="puma-label intro">${feature.properties.nabes}</p>`,
+      '<div class="row soft">',
+      `<div class="column num"><p class="num">${feature.properties.NU_softsites_12}</p></div>`,
+      '<div class="column text"> sites fit CEQR soft site criteria in 2012</div>',
+      "</div>",
+      '<div class="row  dev_soft">',
+      `<div class="column num"><p class="num">${feature.properties.NU_rec_dev_is_soft_site}</p></div>`,
+      '<div class="column text"> of those sites were developed between 2012 and 2022</div>',
+      "</div>",
+      '<div class="row intro">',
+      `<div class="column num"><p class="num">${feature.properties.NU_rec_dev_not_soft_site}</p></div>`,
+      '<div class="column text"> lots that did not fit CEQR soft site criteria were also developed</div>',
+      "</div>",
+    ].join("");
   });
 };
 

@@ -4,7 +4,6 @@ import Flex from "../../components/Flex";
 import Main from "../../components/Main";
 import Box from "../../components/Box";
 import Header from "../../components/Header";
-// import FooterNavPill from "../../components/NavPill/FooterNavPill";
 import styled from "styled-components";
 import css from "@styled-system/css";
 import NavPill from "../../components/NavPill";

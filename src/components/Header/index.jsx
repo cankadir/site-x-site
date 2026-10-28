@@ -229,7 +229,14 @@ const Header = ({
               <LogoPlaceHolder $logoStyle={logoStyle} />
             </Link>
           </Flex>
-          <Flex flexDirection="column" marginTop="auto" marginBottom="105px">
+          <Flex
+            flexDirection="column"
+            justifyContent="flex-end"
+            flex="1 1 auto"
+            minHeight="0"
+            overflowY="auto"
+            marginBottom="clamp(24px, 12vh, 105px)"
+          >
             {/* <Flex flexDirection="row" > */}
               <Title
                 paddingLeft="185px"

@@ -16,7 +16,6 @@ import zoningd from "../../public/images/part2/zoning_diagram-min.svg";
 import timeline from "../../public/images/part2/section2/timeline2.svg";
 import newConstruction from "../../public/images/part2/newConstruction_min.jpg";
 import zoningLotMerger from "../../public/images/part2/lot_merger.svg";
-// import FooterNavPill from "../../components/NavPill/FooterNavPill";
 import ImageExtended from "../../components/ImageExtended";
 import styled from "styled-components";
 import css from "@styled-system/css";

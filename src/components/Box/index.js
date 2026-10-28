@@ -13,12 +13,6 @@ import {
   grid,
 } from "styled-system";
 
-// @eslint-disable-next-line no-unused-vars
-const whiteSpace = system({
-  prop: "whiteSpace",
-  cssProperty: "white-space",
-});
-
 const customProps = () => {
   return system({ whiteSpace: true });
 };

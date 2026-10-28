@@ -13,7 +13,7 @@ const DotChart = () => {
     displayDotChart();
   });
 
-  useEffect((ref) => {
+  useEffect(() => {
     // set the dimensions and margins of the graph
     // set the dimensions and margins of the graph
     const margin = { top: 20, right: 30, bottom: 30, left: 150 };
@@ -37,7 +37,7 @@ const DotChart = () => {
 
     // Read the data and compute summary statistics for each specie
     d3.csv(
-      "https://raw.githubusercontent.com/PrattSAVI/site-x-site/main/data/puma_displacement.csv",
+      `${process.env.PUBLIC_URL}/data/puma_displacement.csv`,
       function (data) {
         // Add the options to the button
         d3.select("#selectButton")

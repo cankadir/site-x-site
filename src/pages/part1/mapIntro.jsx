@@ -1,25 +1,5 @@
 import React from "react";
-import Text from "../../components/Text";
-import Flex from "../../components/Flex";
-import Main from "../../components/Main";
-import Box from "../../components/Box";
 import Header from "../../components/Header";
-
-import styled from "styled-components";
-import css from "@styled-system/css";
-import NavPill from "../../components/NavPill";
-import { Link } from "react-router-dom";
-
-const NextLink = styled(Link)(css({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "left",
-  textDecoration: "none",
-  color:"#908E8E",
-  "&:hover": {
-    color: "#6BB219",
-  },
-}))
 
 const SectionOne = () => {
   return (

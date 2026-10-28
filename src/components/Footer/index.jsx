@@ -19,15 +19,18 @@ import { useLocation } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
-  if(location.pathname === "/part1") return null;
+  if (
+    location.pathname === "/part1" ||
+    location.pathname === "/part1/mapIntro"
+  )
+    return null;
   return (
     <Flex
       width="90%"
       mx="auto"
       justifyContent="space-between"
       py="25px"
-      alignItem="center"
-      borderTop="solid 1px"
+      alignItems="center"      borderTop="solid 1px"
       borderColor="fullSiteGrey"
     >
       <Text fontSize={1} maxWidth="500px">

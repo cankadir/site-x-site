@@ -6,7 +6,6 @@ import SectionOne from "./pages/part2";
 import SectionTwo from "./pages/part2/section2";
 import SectionThree from "./pages/part2/section3";
 import SectionFour from "./pages/part2/section4";
-// import SectionFive from "./pages/part2/section5";
 import Methodology from "./pages/methods";
 import Glossary from "./pages/methods/glossary";
 import About from "./pages/methods/about";
